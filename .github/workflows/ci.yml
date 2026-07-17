@@ -27,13 +27,8 @@ jobs:
         with:
           node-version: 20
 
-      - name: Rebuild dependency lock
-        run: |
-          rm -f package-lock.json
-          npm install --package-lock-only --ignore-scripts --no-audit --no-fund
-
       - name: Install dependencies
-        run: npm ci --no-audit --no-fund
+        run: npm install --legacy-peer-deps --no-audit --no-fund
 
       - name: Run tests
         run: npm test -- --watchAll=false
