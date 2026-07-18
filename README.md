@@ -5,7 +5,7 @@ A small React application originally created with Create React App. The reposito
 ## Technology stack
 
 - React 17
-- Create React App 4
+- Create React App 5
 - JavaScript
 - React Testing Library
 
@@ -13,13 +13,13 @@ A small React application originally created with Create React App. The reposito
 
 Requirements:
 
-- Node.js 20 LTS
+- Node.js 20 or 22
 - npm 10 or newer
 
 Install dependencies and start the development server:
 
 ```bash
-npm ci
+npm install --legacy-peer-deps
 npm start
 ```
 
@@ -28,7 +28,7 @@ The application is available at `http://localhost:3000`.
 ## Production build
 
 ```bash
-npm ci
+npm install --legacy-peer-deps
 npm run build
 ```
 
